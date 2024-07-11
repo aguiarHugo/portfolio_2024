@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -28,6 +30,11 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Muito prazer, meu nome é Hugo Aguiar, sou Desenvolvedor Front-end
           </p>
+          <MagicButton
+            title="Meus Projetos"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
         </div>
       </div>
     </div>
